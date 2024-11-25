@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+us1=User.create!(email:"Thefirstone@gmail.com", password: "THEFIRST1")
+us2=User.create!(email:"CatolicaUc@gmail.com", password: "segundo2")
+
+comp1= Compliment.create!(comp: "Tremendo corazon tienes para un pecho tan pequeño!", user: us1)
+comp2= Compliment.create!(comp: "Nice gains, bro!", user: us1)
+comp3= Compliment.create!(comp: "La luna no ilumina tanto como tu sonrisa", user: us2)
+comp4= Compliment.create!(comp: "Necesito mas horas en el dia para verte aun mas", user: us2)

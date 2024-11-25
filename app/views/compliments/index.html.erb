@@ -1,0 +1,10 @@
+<h1>Todos los cumplidos</h1>
+<%= link_to 'Añadir cumplido', new_compliment_path %>
+<ul>
+  <% @compliments.each do |compliment| %>
+    <li>
+      <%= compliment.comp %> - <%= compliment.user.email %>
+      <%= link_to 'Editar', edit_compliment_path(compliment) %>
+    </li>
+  <% end %>
+</ul>
